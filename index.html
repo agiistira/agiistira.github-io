@@ -1,245 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <!-- Aos -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="style.css" />
+    <title>My Portofolio | Agistira Lamunde</title>
+  </head>
 
-  <title>My Portofolio | Agistira Lamunde</title>
-</head>
-
-<body id="home">
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #0099ff">
-    <div class="container">
-      <a class="navbar-brand" href="#">Agistira Lamunde</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="jumbotron text-center" data-aos="fade-up" data-aos-duration="2000">
-    <img src="img/1.jpg" alt="Agistira Lamunde" width="200" class="rounded-circle img-thumbnail" />
-    <h1 class="display-4">Agistira Lamunde</h1>
-    <p class="lead">Student | Informatics Engineering</p>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffff" fill-opacity="1"
-        d="M0,192L48,181.3C96,171,192,149,288,160C384,171,480,213,576,213.3C672,213,768,171,864,176C960,181,1056,235,1152,224C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-      </path>
-    </svg>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <div class="row text-center mb-3">
-        <div class="col">
-          <h2>About Me</h2>
+  <body id="home">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #0099ff">
+      <div class="container">
+        <a class="navbar-brand" href="#">Agistira Lamunde</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#achievment">Achievment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
-          <p>Hello my name is Agistira Lamunde, i am an Informatics Engineering Student at the Maritime University Of
-            Raja Ali Haji. My Hobby is playing games and now iam stay at Tanjungpinang, Kepulauan Riau.</p>
-        </div>
-        <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000">
-          <p>Thank you for visiting my portfolio page, there are several projects that I have worked on too, I hope that
-            will make you interested in contacting me, Thank You</p>
-        </div>
-      </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#e2edff" fill-opacity="1"
-        d="M0,96L34.3,112C68.6,128,137,160,206,176C274.3,192,343,192,411,170.7C480,149,549,107,617,101.3C685.7,96,754,128,823,144C891.4,160,960,160,1029,160C1097.1,160,1166,160,1234,144C1302.9,128,1371,96,1406,80L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-      </path>
-    </svg>
-  </section>
+    </nav>
 
-  <section id="projects">
-    <div class="container">
-      <div class="row text-center mb-3">
-        <div class="col">
-          <h2>My Projects</h2>
+    <section class="jumbotron text-center" data-aos="fade-up" data-aos-duration="2000">
+      <img src="img/profil.jpeg" alt="Agistira Lamunde" width="200" class="rounded-circle img-thumbnail" />
+      <h1 class="display-4">Agistira Lamunde</h1>
+      <p class="lead">Student | Informatics Engineering</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffff"
+          fill-opacity="1"
+          d="M0,192L48,181.3C96,171,192,149,288,160C384,171,480,213,576,213.3C672,213,768,171,864,176C960,181,1056,235,1152,224C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
+            <p>
+              Hello my name is Agistira Lamunde, i am an Final Year Informatics Engineering Student at the Maritime University Of Raja Ali Haji. My Hobby is playing games, I am also active in campus organizations and committees, for now iam
+              stay at Tanjungpinang, Kepulauan Riau.
+            </p>
+          </div>
+          <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000">
+            <p>Thank you for visiting my portfolio page, there are several Projects,Achievment and My Gallery as a Student that I have worked on too, I hope that will make you interested in contacting me, Thank You</p>
+          </div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
-            <img src="img/Projects/SS Android.jpeg" class="card-img-top" alt="Projects 1" />
-            <div class="card-body">
-              <p class="card-text">This is my first android project, a simple android application that contains text
-                based information, images and descriptions. Created using the java language with the android studio
-                application</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,96L34.3,112C68.6,128,137,160,206,176C274.3,192,343,192,411,170.7C480,149,549,107,617,101.3C685.7,96,754,128,823,144C891.4,160,960,160,1029,160C1097.1,160,1166,160,1234,144C1302.9,128,1371,96,1406,80L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Projects</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+              <img src="img/Projects/SS Android.jpeg" class="card-img-top" alt="Projects 1" />
+              <div class="card-body">
+                <p class="card-text">This is my first android project, a simple android application that contains text based information, images and descriptions. Created using the java language with the android studio application</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
+              <img src="img/Projects/SS Form Database Perpustakaan.png" class="card-img-top" alt="Projects 2" />
+              <div class="card-body">
+                <p class="card-text">This is one of my course project assignments, namely web programming, creating a web form database library using the PHP language</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600">
+              <img src="img/Projects/SS Project Cerpenku.png" class="card-img-top" alt="Projects 3" />
+              <div class="card-body">
+                <p class="card-text">
+                  This is a website project that contains a collection of short stories in Indonesia, where on this website the user can search and read the desired short storyThis is a website project that contains a collection of short
+                  stories in Indonesia, where on this website the user can search and read the desired short storyThis is a website project that contains a collection of short stories in Indonesia, where on this website the user can search
+                  and read the desired short story, this website uses the PHP language.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800">
+              <img src="img/Projects/SS Web Fakultas.png" class="card-img-top" alt="Projects 4" />
+              <div class="card-body">
+                <p class="card-text">
+                  This is a coding class final project that I created, namely a beginner web programming class. I created a simple website about engineering faculty information on my campus, this website uses the PHP language
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <img src="img/Projects/ss.png" class="card-img-top" alt="Projects 5" />
+              <div class="card-body">
+                <p class="card-text">This is my website project which contains movie information, this is my project form course front end development web from dicoding.com</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
-            <img src="img/Projects/SS Form Database Perpustakaan.png" class="card-img-top" alt="Projects 2" />
-            <div class="card-body">
-              <p class="card-text">This is one of my course project assignments, namely web programming, creating a web
-                form database library using the PHP language</p>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L34.3,96C68.6,96,137,96,206,112C274.3,128,343,160,411,192C480,224,549,256,617,250.7C685.7,245,754,203,823,176C891.4,149,960,139,1029,149.3C1097.1,160,1166,192,1234,197.3C1302.9,203,1371,181,1406,170.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section id="achievment">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Achievment</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+              <img src="img/Achievment/1.png" class="card-img-top" alt="Projects 1" />
+              <div class="card-body">
+                <p class="card-text">Take and completed "Web Basic Programming" classes at dicoding.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
+              <img src="img/Achievment/2.png" class="card-img-top" alt="Projects 2" />
+              <div class="card-body">
+                <p class="card-text">Take and completed web "Front-End Web Development" classes at dicoding.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600">
+              <img src="img/Achievment/3.png" class="card-img-top" alt="Projects 3" />
+              <div class="card-body">
+                <p class="card-text">Take and completed "Back-End Basic Programming" classes at dicoding.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800">
+              <img src="img/Achievment/4.png" class="card-img-top" alt="Projects 4" />
+              <div class="card-body">
+                <p class="card-text">Take and completed "Front-End Web React Js Programming" classes at sanbercode.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <img src="img/Achievment/5.png" class="card-img-top" alt="Projects 5" />
+              <div class="card-body">
+                <p class="card-text">Take and completed "Android Basic Programming" classes at dicoding.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <img src="img/Achievment/5.png" class="card-img-top" alt="Projects 5" />
+              <div class="card-body">
+                <p class="card-text">Take and completed "Starting Programming With Python" classes at dicoding.com</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600">
-            <img src="img/Projects/SS Project Cerpenku.png" class="card-img-top" alt="Projects 3" />
-            <div class="card-body">
-              <p class="card-text">
-                This is a website project that contains a collection of short stories in Indonesia, where on this
-                website the user can search and read the desired short storyThis is a website project that contains a
-                collection of short
-                stories in Indonesia, where on this website the user can search and read the desired short storyThis is
-                a website project that contains a collection of short stories in Indonesia, where on this website the
-                user can search
-                and read the desired short story, this website uses the PHP language.
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L34.3,96C68.6,96,137,96,206,112C274.3,128,343,160,411,192C480,224,549,256,617,250.7C685.7,245,754,203,823,176C891.4,149,960,139,1029,149.3C1097.1,160,1166,192,1234,197.3C1302.9,203,1371,181,1406,170.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+              <img src="img/Gallery/1.jpeg" class="card-img-top" alt="Projects 1" />
+              <div class="card-body">
+                <p class="card-text">Disini saya mengikuti Program Kampus Mengajar dan salah satu program kami yaitu membantu kemajuan teknologi, disini saya sebagai pembicara untuk sosialisasi media pembelajaran daring zoom meeting</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="400">
+              <img src="img/Gallery/2.jpeg" class="card-img-top" alt="Projects 2" />
+              <div class="card-body">
+                <p class="card-text">
+                  Masih salah satu program kampus mengajar disini saya membantu workshop kepala sekolah sebagai pembicara workshop yang berjudul "Pemanfaatan Media Pembelajaran Power Point untuk meningkatkan hasil belajar siswa di SD Negeri
+                  007 Tanjungpinang Kota
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="600">
+              <img src="img/Gallery/3.jpeg" class="card-img-top" alt="Projects 3" />
+              <div class="card-body">
+                <p class="card-text">Disini saya menjadi pembicara dalam kegiatan Sosialisasi Media Pembelajaran Daring Google Form</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800">
+              <img src="img/Gallery/9.jpeg" class="card-img-top" alt="Projects 4" />
+              <div class="card-body">
+                <p class="card-text">
+                  Saya juga aktif di Organisasi Kampus, saya sendiri menjadi Ketua Umum dari Himpunan Mahasiswa Teknik Informatika Universitas Maritim Raja Ali Haji dari November 2020-November 2021. Ini salah satu program kerja yang kami
+                  lakukan adalah "HMTI Peduli Open Donasi untuk masyarakat yang terdampak gempa di Nusa Tenggara Timur dan Malang"
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <img src="img/Gallery/6.jpeg" class="card-img-top" alt="Projects 5" />
+              <div class="card-body">
+                <p class="card-text">Ini adalah Kegiatan Pelantikan saya sebagai Ketua Umum HMTI UMRAH 2021</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <img src="img/Gallery/7.jpeg" class="card-img-top" alt="Projects 5" />
+              <div class="card-body">
+                <p class="card-text">Foto saya memegang bendera organisasi saya yaitu "Himpunan Mahasiswa Teknik Informatika"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <img src="img/Gallery/4.jpeg" class="card-img-top" alt="Projects 5" />
+              <div class="card-body">
+                <p class="card-text">"Himpunan Mahasiswa Teknik Informatika Universitas Maritim Raja Ali Haji"</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <img src="img/Gallery/5.jpeg" class="card-img-top" alt="Projects 5" />
+              <div class="card-body">
+                <p class="card-text">Himpunan Mahasiswa Teknik Informatika Universitas Maritim Raja Ali Haji</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
+              <img src="img/Gallery/8.jpeg" class="card-img-top" alt="Projects 5" />
+              <div class="card-body">
+                <p class="card-text">Himpunan Mahasiswa Teknik Informatika Universitas Maritim Raja Ali Haji</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L34.3,96C68.6,96,137,96,206,112C274.3,128,343,160,411,192C480,224,549,256,617,250.7C685.7,245,754,203,823,176C891.4,149,960,139,1029,149.3C1097.1,160,1166,192,1234,197.3C1302.9,203,1371,181,1406,170.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <!-- <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Thank You!</strong> For contacting me.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="form-contact">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="Pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="Pesan" rows="3" name="pesan"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+              <button class="btn btn-primary d-none btn-loading" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div> -->
+
+        <div class="row justify-content-center">
+          <div class="col-md-4 mx-auto">
+            <div class="">
+              <p>
+                <span style="font-size: 30px; color: cornflowerblue"><i class="fas fa-home me-2"></i></span>Tanjungpinang, Kepulauan Riau. Indonesia
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="800">
-            <img src="img/Projects/SS Web Fakultas.png" class="card-img-top" alt="Projects 4" />
-            <div class="card-body">
-              <p class="card-text">
-                This is a coding class final project that I created, namely a beginner web programming class. I created
-                a simple website about engineering faculty information on my campus, this website uses the PHP language
+              <p>
+                <span style="font-size: 30px; color: cornflowerblue"><i class="fas fa-envelope me-2"></i></span>agiistira@gmail.com
               </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-3">
-          <div class="card" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000">
-            <img src="img/Projects/ss.png" class="card-img-top" alt="Projects 5" />
-            <div class="card-body">
-              <p class="card-text">This is my website project which contains movie information, I created this website
-                using node.js</p>
+              <p>
+                <span style="font-size: 30px; color: cornflowerblue"><i class="fas fa-phone me-2"></i></span>+6283183530014
+              </p>
+              <p>
+                <span style="font-size: 30px; color: cornflowerblue"><i class="fab fa-instagram me-2"></i></span>@agiistira
+              </p>
+              <a href="https://www.linkedin.com/in/agistira-lamunde-912155212/">
+                <p>
+                  <span style="font-size: 30px; color: cornflowerblue"><i class="fab fa-linkedin-in me-2"></i></span>Agistira Lamunde
+                </p></a
+              >
+
+              <!-- <ul class="list-unstyled">
+                <li class="">
+                  <a href="" class="btn-floating btn-sm" style="font-size: 50px"><i class="fas fa-envelope">agiistira@gmail</i></a>
+                </li>
+                <li class="">
+                  <a href="" class="btn-floating btn-sm" style="font-size: 50px"><i class="fas fa-phone"></i></a>
+                </li>
+                <li class="">
+                  <a href="" class="btn-floating btn-sm" style="font-size: 50px"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="">
+                  <a href="" class="btn-floating btn-sm" style="font-size: 50px"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+              </ul> -->
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#ffffff" fill-opacity="1"
-        d="M0,96L34.3,96C68.6,96,137,96,206,112C274.3,128,343,160,411,192C480,224,549,256,617,250.7C685.7,245,754,203,823,176C891.4,149,960,139,1029,149.3C1097.1,160,1166,192,1234,197.3C1302.9,203,1371,181,1406,170.7L1440,160L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-      </path>
-    </svg>
-  </section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0099ff"
+          fill-opacity="1"
+          d="M0,160L34.3,181.3C68.6,203,137,245,206,240C274.3,235,343,181,411,165.3C480,149,549,171,617,202.7C685.7,235,754,277,823,282.7C891.4,288,960,256,1029,224C1097.1,192,1166,160,1234,154.7C1302.9,149,1371,171,1406,181.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
 
-  <section id="contact">
-    <div class="container">
-      <div class="row text-center mb-3">
-        <div class="col">
-          <h2>Contact Me</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-            <strong>Thank You!</strong> For contacting me.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          <form name="form-contact">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="Pesan" class="form-label">Pesan</label>
-              <textarea class="form-control" id="Pesan" rows="3" name="pesan"></textarea>
-            </div>
+    <footer class="text-white text-center pb-5" style="background-color: #0099ff">
+      <p>Created with <i class="bi bi-heart-fill"></i> by <a href="https://www.instagram.com/agiistira/" class="text-white fw-bold">Agistira Lamunde</a></p>
+    </footer>
 
-            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-            <button class="btn btn-primary d-none btn-loading" type="button" disabled>
-              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-              Loading...
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#0099ff" fill-opacity="1"
-        d="M0,160L34.3,181.3C68.6,203,137,245,206,240C274.3,235,343,181,411,165.3C480,149,549,171,617,202.7C685.7,235,754,277,823,282.7C891.4,288,960,256,1029,224C1097.1,192,1166,160,1234,154.7C1302.9,149,1371,171,1406,181.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-      </path>
-    </svg>
-  </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+      });
+    </script>
 
-  <footer class="text-white text-center pb-5" style="background-color: #0099ff">
-    <p>Created with <i class="bi bi-heart-fill"></i> by <a href="https://www.instagram.com/agiistira/"
-        class="text-white fw-bold">Agistira Lamunde</a></p>
-  </footer>
+    <!-- <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw1XJbIHAZ3f1v0cQOaDdBkrUEGTnS2S7KlsFkaod-RVShKL22KmFAoq3KETWbsJ02ITw/exec";
+      const form = document.forms["form-contact"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: false,
-    });
-  </script>
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
 
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            myAlert.classList.toggle("d-none");
+            form.reset();
 
-  <script>
-    const scriptURL = "https://script.google.com/macros/s/AKfycbw1XJbIHAZ3f1v0cQOaDdBkrUEGTnS2S7KlsFkaod-RVShKL22KmFAoq3KETWbsJ02ITw/exec";
-    const form = document.forms["form-contact"];
-    const btnKirim = document.querySelector(".btn-kirim");
-    const btnLoading = document.querySelector(".btn-loading");
-    const myAlert = document.querySelector(".my-alert");
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      btnLoading.classList.toggle("d-none");
-      btnKirim.classList.toggle("d-none");
-
-      fetch(scriptURL, { method: "POST", body: new FormData(form) })
-        .then((response) => {
-          btnLoading.classList.toggle("d-none");
-          btnKirim.classList.toggle("d-none");
-          myAlert.classList.toggle("d-none");
-          form.reset();
-
-          console.log("Success!", response);
-        })
-        .catch((error) => console.error("Error!", error.message));
-    });
-  </script>
-</body>
-
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script> -->
+  </body>
 </html>
